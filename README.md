@@ -44,8 +44,6 @@ Technical-Test-Martech/
 └── README.md                         # This file
 ```
 
-*(Adjust the top-level folder name if your repo root differs.)*
-
 ---
 
 ## Prerequisites
