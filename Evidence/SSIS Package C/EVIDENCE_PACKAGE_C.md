@@ -20,6 +20,7 @@ Load sales summary from AdventureWorks (Header + Detail) into **AdHocDB.dbo.tbSa
 | 4 | SS4_First_Execution_LookUp_0 | **First run – Lookup detail.** Lookup messages in the Progress tab: e.g. *"Lookup has cached 0 rows"* (tbSalesSummary was empty), so all source rows were "No Match" and were inserted into the destination after the Derived Column set Source = 'SYSTEM'. |
 | 5 | SS5_Second_Execution | **Second run – Progress.** Progress tab for the **second** execution. **OLE DB Destination** must show **0 rows written**, because all (CustomerId, SummaryDate) combinations already exist in tbSalesSummary. |
 | 6 | SS6_Second_Execution_LookUp_31406 | **Second run – Lookup detail.** Lookup messages: e.g. *"Lookup has cached a total of 31406 rows"*. All source rows matched; none were sent to the destination. Confirms no duplicate inserts. |
+| 7 | SS7_Select_tbSalesSummary | **Database check.** Screenshot of SSMS running `SELECT * FROM dbo.tbSalesSummary;` showing actual sales summary records loaded. This image should display key columns like SalesSummaryId, CustomerId, CustomerName, SummaryDate, Total_Items, Total_Sales, Source, and CreatedAt, confirming that real data has been inserted and demonstrating the table is properly populated with the expected rows.
 
 ---
 

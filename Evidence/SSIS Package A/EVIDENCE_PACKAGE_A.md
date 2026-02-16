@@ -20,6 +20,7 @@ Load customers from AdventureWorks into **AdHocDB.dbo.tbCustomers** incrementall
 | 4 | SS4_First_Execution_LookUp_0 | **First run – Lookup detail.** Lookup messages in the Progress tab: e.g. *"Lookup has cached 0 rows"* (tbCustomers was empty), so all source rows were "No Match" and were inserted into the destination. |
 | 5 | SS5_Second_Execution | **Second run – Progress.** Progress tab for the **second** execution. **OLE DB Destination** must show **0 rows written**, because all CustomerIds already exist in tbCustomers. |
 | 6 | SS6_Second_Execution_LookUp_19119 | **Second run – Lookup detail.** Lookup messages: e.g. *"Lookup has cached a total of 19119 rows"*. All source rows matched; none were sent to the destination. Confirms no duplicate inserts. |
+| 7 | SS7_Select_tbCustomers | **Database check.** Screenshot of SSMS running `SELECT * FROM dbo.tbCustomers;` showing actual customer records loaded. This image should display key columns like CustomerId, FirstName, LastName, Phone, Email, and CreatedAt, confirming that real data has been inserted and demonstrating the table is properly populated with the expected rows.
 
 ---
 

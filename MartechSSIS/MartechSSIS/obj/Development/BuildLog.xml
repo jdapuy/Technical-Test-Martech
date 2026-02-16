@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>MartechSSIS</Name>
-    <LastWriteTime>2026-02-15T08:01:55.1354047Z</LastWriteTime>
+    <LastWriteTime>2026-02-15T22:53:17.1561075Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -19,6 +19,11 @@
     <ProjectBuildItemInfo>
       <Name>PackageC.dtsx</Name>
       <LastWriteTime>2026-02-15T08:01:55.1190417Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>PackageStarWars.dtsx</Name>
+      <LastWriteTime>2026-02-16T05:12:10.5154702Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

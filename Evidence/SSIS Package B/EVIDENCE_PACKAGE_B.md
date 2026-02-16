@@ -20,6 +20,7 @@ Load products from AdventureWorks into **AdHocDB.dbo.tbProduct** incrementally: 
 | 4 | SS4_First_Execution_LookUp_0 | **First run – Lookup detail.** Lookup messages in the Progress tab: e.g. *"Lookup has cached 0 rows"* (tbProduct was empty), so all source rows were "No Match" and were inserted into the destination. |
 | 5 | SS5_Second_Execution | **Second run – Progress.** Progress tab for the **second** execution. **OLE DB Destination** must show **0 rows written**, because all ProductIds already exist in tbProduct. |
 | 6 | SS6_Second_Execution_LookUp_304 | **Second run – Lookup detail.** Lookup messages: e.g. *"Lookup has cached a total of 304 rows"*. All source rows matched; none were sent to the destination. Confirms no duplicate inserts. |
+| 7 | SS7_Select_tbProducts | **Database check.** Screenshot of SSMS running `SELECT * FROM dbo.tbProduct;` showing the actual product records loaded. This image should display key columns like ProductId, Name, CurrentPrice, CategoryName, and CreatedAt, confirming that real data has been inserted and demonstrating the table is properly populated with the expected rows.
 
 ---
 
