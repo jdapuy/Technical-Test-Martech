@@ -1,4 +1,4 @@
-# Evidence – API REST (Fase 6)
+# Evidence – API REST
 
 This document describes the screenshots and Postman evidence for the **MartechAPI** REST API: **GET** (sales summary by customer) and **POST** (manual summary entry), including success and validation/error cases.
 
