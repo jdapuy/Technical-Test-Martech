@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jdapu\\OneDrive\\Escritorio\\Marketing Automation Specialist Technical Task\\TECHNICAL_TEST_MARTECH_POSITION\\MartechSSIS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38A20D77-2C66-9D89-A887-77CCE56570AB}|MartechSSRS\\MartechSSRS.rptproj|C:\\Users\\jdapu\\OneDrive\\Escritorio\\Marketing Automation Specialist Technical Task\\TECHNICAL_TEST_MARTECH_POSITION\\MartechSSIS\\MartechSSRS\\SalesSummaryReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{38A20D77-2C66-9D89-A887-77CCE56570AB}|MartechSSRS\\MartechSSRS.rptproj|solutionrelative:MartechSSRS\\SalesSummaryReport.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SalesSummaryReport.rdl [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jdapu\\OneDrive\\Escritorio\\Marketing Automation Specialist Technical Task\\TECHNICAL_TEST_MARTECH_POSITION\\MartechSSIS\\MartechSSRS\\SalesSummaryReport.rdl",
+              "RelativeDocumentMoniker": "MartechSSRS\\SalesSummaryReport.rdl",
+              "ToolTip": "C:\\Users\\jdapu\\OneDrive\\Escritorio\\Marketing Automation Specialist Technical Task\\TECHNICAL_TEST_MARTECH_POSITION\\MartechSSIS\\MartechSSRS\\SalesSummaryReport.rdl [Dise\u00F1o]",
+              "RelativeToolTip": "MartechSSRS\\SalesSummaryReport.rdl [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-16T04:24:44.471Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
