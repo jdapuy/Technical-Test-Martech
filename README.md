@@ -118,11 +118,11 @@ Screenshots referenced in these documents are in the same folders.
 
 ## References
 
-- **Technical test (PDF):** [TechTest MartechPosition.pdf](TechTest MartechPosition.pdf) — Original instructions of the assessment.
+- **Technical test (PDF):** [TechTest MartechPosition](TechTest MartechPosition.pdf) — Original instructions of the assessment.
 - **SQL scripts:** [SCRIPTS_SQL_QUERIES.md](SCRIPTS_SQL_QUERIES.md)
 
 ---
 
 ## Author
-Juan Diego Apuy Villalobos
+- **Juan Diego Apuy Villalobos**.
 Technical test deliverable – Marketing Automation Specialist position.
