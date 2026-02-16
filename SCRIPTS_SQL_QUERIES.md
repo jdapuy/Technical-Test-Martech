@@ -1,9 +1,7 @@
 
 ---
 
-## In AdHocDB – Tables (Phase 1)
-
-### Script 1 – Create table tbCustomers
+### Create table tbCustomers
 
 ```sql
 USE AdHocDB;
@@ -22,7 +20,7 @@ GO
 
 ---
 
-### Script 2 – Create table tbProduct
+### Create table tbProduct
 
 ```sql
 USE AdHocDB;
@@ -40,7 +38,7 @@ GO
 
 ---
 
-### Script 3 – Create table tbSalesSummary
+### Create table tbSalesSummary
 
 ```sql
 USE AdHocDB;
@@ -61,9 +59,9 @@ GO
 
 ---
 
-## In AdHocDB – View, UDF and Stored Procedures
+## View, UDF and Stored Procedures
 
-### Script 4 – UDF to return date only (no time)
+###UDF to return date only (no time)
 
 ```sql
 USE AdHocDB;
@@ -80,7 +78,7 @@ GO
 
 ---
 
-### Script 5 – View for the report (uses the UDF)
+### View for the report (uses the UDF)
 
 ```sql
 USE AdHocDB;
@@ -103,7 +101,7 @@ GO
 
 ---
 
-### Script 6 – Stored Procedure: get summary by customer (for API GET)
+### Stored Procedure: get summary by customer (for API GET)
 
 ```sql
 USE AdHocDB;
@@ -124,7 +122,7 @@ GO
 
 ---
 
-### Script 7 – Stored Procedure: insert manual record (for API POST)
+### Stored Procedure: insert manual record (for API POST)
 
 ```sql
 USE AdHocDB;
@@ -147,9 +145,7 @@ GO
 
 ---
 
-## In AdventureWorks – Queries for SSIS
-
-Replace your AdventureWorks database name if different (e.g. AdventureWorks_v2019).
+##  Queries for SSIS
 
 ### Query for SSIS Package A – Customers
 
@@ -210,7 +206,6 @@ GROUP BY h.CustomerID, CAST(h.OrderDate AS DATE), p.FirstName, p.LastName
 
 ## In AdHocDB – Star Wars table
 
-### Script 8 – Table for Star Wars API data (e.g. characters)
 
 ```sql
 USE AdHocDB;
@@ -229,12 +224,9 @@ GO
 
 ---
 
-## For the SSRS report
+## SSRS report
 
 ### Dataset query (parameters @InitialDate, @FinalDate)
-
-Create report parameters **InitialDate** and **FinalDate** (Date type) and assign them to @InitialDate and @FinalDate.
-
 ```sql
 SELECT SalesSummaryId, CustomerId, CustomerName, SummaryDate, Total_Items, Total_Sales, Source
 FROM dbo.vw_SalesSummaryReport
@@ -243,16 +235,3 @@ ORDER BY SummaryDate, CustomerId
 ```
 
 ---
-
-
-## Summary – what to run and in what order
-
-| Order | Script / Query | Database | Where it is used |
-|-------|----------------|----------|------------------|
-| 1 | Scripts 1, 2, 3 (tables) | AdHocDB | Phase 1 |
-| 2 | Scripts 4, 5, 6, 7 (UDF, view, SPs) | AdHocDB | Phase 2, report and API |
-| 3 | Customers query | AdventureWorks | SSIS Package A – source |
-| 4 | Products query | AdventureWorks | SSIS Package B – source |
-| 5 | Sales summary query | AdventureWorks | SSIS Package C – source |
-| 6 | Script 8 (tbStarWars) | AdHocDB | Phase 4 |
-| 7 | Report query | AdHocDB | SSRS dataset |
