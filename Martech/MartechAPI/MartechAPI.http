@@ -1,0 +1,6 @@
+@MartechAPI_HostAddress = http://localhost:5000
+
+GET {{MartechAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
